@@ -40,6 +40,8 @@ QCDCT_order: 0
 Amp_QCD_order: 0 
 # order of QED coupling ee in the amplitude
 Amp_QED_order: $(2+2*nloop)
+# order of special coupling in the amplitude
+Amp_SPC_order: 0 
 
 # min ep power in the amplitude
 Amp_Min_Ep_Xpt: $(-2*nloop)

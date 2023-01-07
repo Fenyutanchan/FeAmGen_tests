@@ -13,23 +13,23 @@ Diagram #282:
     Den(-q1, mt, 0)
 Kinematics Relations: 
   SP(k1, k2) => (1/2)*shat
-  Den(K3 - k1, mt, 0) => ver6
-  Den(-K4 + k2, mt, 0) => ver6
-  Den(K3 + K4, 0, 0) => ver7
-  Den(-K3 - K4, 0, 0) => ver7
+  Den(K3 - k1, mt, 0) => ver2
+  Den(-K4 + k2, mt, 0) => ver2
+  Den(K3 + K4, 0, 0) => ver3
+  Den(-K3 - K4, 0, 0) => ver3
   SP(K3, K3) => mw^2
-  SP(K4, k1) => (1/2)*(shat + ver1 - mw^2)
+  SP(K4, k1) => (1/2)*shat + (1/2)*ver1 + (-1/2)*mw^2
   SP(k2, k2) => 0
-  SP(K3, k2) => (1/2)*(shat + ver1 - mt^2)
+  SP(K3, k2) => (1/2)*shat + (1/2)*ver1 + (-1/2)*mt^2
   SP(K4, K4) => mt^2
-  SP(K3, k1) => (1/2)*(-ver1 + mw^2)
-  Den(-K3 + k1, mt, 0) => ver6
-  SP(K3, K4) => (1/2)*(shat - mt^2 - mw^2)
-  Den(K4 - k2, mt, 0) => ver6
-  SP(K4, k2) => (1/2)*(-ver1 + mt^2)
+  SP(K3, k1) => (-1/2)*(ver1 - mw^2)
+  Den(-K3 + k1, mt, 0) => ver2
+  SP(K3, K4) => (1/2)*shat + (-1/2)*mt^2 + (-1/2)*mw^2
+  Den(K4 - k2, mt, 0) => ver2
+  SP(K4, k2) => (-1/2)*ver1 + (1/2)*mt^2
   SP(k1, k1) => 0
-  Den(k1 + k2, 0, 0) => ver7
-  Den(-k1 - k2, 0, 0) => ver7
+  Den(k1 + k2, 0, 0) => ver3
+  Den(-k1 - k2, 0, 0) => ver3
 Color Factors: 
   amp_color #1: 
     (-1/4)*SUNT(clb2, cla4, clb1)/ca; 

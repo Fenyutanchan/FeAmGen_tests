@@ -5,24 +5,24 @@ scale2_list: Basic[shat, mh^2, ver1, mz^2]
 Diagram #1: 
   Denominators: 
 Kinematics Relations: 
-  Den(-k1 - k2, mz, wz) => ver6
+  Den(-k1 - k2, mz, wz) => ver2
   SP(k1, k2) => (1/2)*shat
-  Den(k1 + k2, mz, wz) => ver6
+  Den(k1 + k2, mz, wz) => ver2
   SP(K3, K3) => mh^2
-  SP(K4, k1) => (1/2)*(shat + ver1 - mh^2)
+  SP(K4, k1) => (1/2)*shat + (1/2)*ver1 + (-1/2)*mh^2
   SP(k2, k2) => 0
-  SP(K3, k2) => (1/2)*(shat + ver1 - mz^2)
+  SP(K3, k2) => (1/2)*shat + (1/2)*ver1 + (-1/2)*mz^2
   SP(K4, K4) => mz^2
-  SP(K3, k1) => (1/2)*(-ver1 + mh^2)
-  SP(K3, K4) => (1/2)*(shat - mh^2 - mz^2)
-  SP(K4, k2) => (1/2)*(-ver1 + mz^2)
+  SP(K3, k1) => (-1/2)*(ver1 - mh^2)
+  SP(K3, K4) => (1/2)*shat + (-1/2)*mh^2 + (-1/2)*mz^2
+  SP(K4, k2) => (-1/2)*ver1 + (1/2)*mz^2
   SP(k1, k1) => 0
 Color Factors: 
   amp_color #1: 
     1; 
 Lorentz Factors: 
   amp_lorentz #1: 
-    -2*im*ver6*VecEpC(4, epMU4, K4, r4, mz)*FermionChain(VB(2, k2, r2, 0), PL, GA(epMU4), U(1, k1, r1, 0))*gcsub59*gcsub81 - im*ver6*VecEpC(4, epMU4, K4, r4, mz)*FermionChain(VB(2, k2, r2, 0), PR, GA(epMU4), U(1, k1, r1, 0))*gcsub50*gcsub81 - im*ver6*VecEpC(4, epMU4, K4, r4, mz)*FermionChain(VB(2, k2, r2, 0), PR, GA(epMU4), U(1, k1, r1, 0))*gcsub59*gcsub81; 
+    -2*im*ver2*VecEpC(4, epMU4, K4, r4, mz)*FermionChain(VB(2, k2, r2, 0), PL, GA(epMU4), U(1, k1, r1, 0))*gcsub59*gcsub81 - im*ver2*VecEpC(4, epMU4, K4, r4, mz)*FermionChain(VB(2, k2, r2, 0), PR, GA(epMU4), U(1, k1, r1, 0))*gcsub50*gcsub81 - im*ver2*VecEpC(4, epMU4, K4, r4, mz)*FermionChain(VB(2, k2, r2, 0), PR, GA(epMU4), U(1, k1, r1, 0))*gcsub59*gcsub81; 
 Model Parameters: 
   as => 0.118
   aws => 0.808

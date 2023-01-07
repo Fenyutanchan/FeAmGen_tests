@@ -7,36 +7,36 @@ Diagram #30:
     Den(-k1 - k2 + q1, mt, 0)
     Den(q1, mt, 0)
 Kinematics Relations: 
-  Den(-k1 - k2, mz, wz) => ver7
+  Den(-k1 - k2, mz, wz) => ver3
   SP(k1, k2) => (1/2)*shat
-  Den(k1 + k2, mz, wz) => ver7
-  Den(-K4 + k1, 0, 0) => ver10
-  Den(k1 - (-K3 + k1 + k2), 0, 0) => ver10
-  Den(K4 - k2, 0, 0) => ver8
+  Den(k1 + k2, mz, wz) => ver3
+  Den(K3 - k2, 0, 0) => ver4
+  Den(-K4 + k1, 0, 0) => ver4
+  Den(K4 - k2, 0, 0) => ver5
   SP(K3, K3) => mh^2
-  Den(K4 - k1, 0, 0) => ver10
-  SP(K4, k1) => (1/2)*(shat + ver1 - mh^2)
+  Den(K4 - k1, 0, 0) => ver4
+  SP(K4, k1) => (1/2)*shat + (1/2)*ver1 + (-1/2)*mh^2
   SP(k2, k2) => 0
-  Den(K3 + K4, mz, wz) => ver7
-  Den(-K3 - K4, mz, wz) => ver7
-  Den(-K3 + k2, 0, 0) => ver10
-  SP(K3, k2) => (1/2)*(shat + ver1 - mz^2)
+  Den(K3 + K4, mz, wz) => ver3
+  Den(-K3 - K4, mz, wz) => ver3
+  Den(-K3 + k2, 0, 0) => ver4
+  SP(K3, k2) => (1/2)*shat + (1/2)*ver1 + (-1/2)*mz^2
   SP(K4, K4) => mz^2
-  SP(K3, k1) => (1/2)*(-ver1 + mh^2)
-  SP(K3, K4) => (1/2)*(shat - mh^2 - mz^2)
-  Den(-K4 + k2, 0, 0) => ver8
-  Den(K3 - k1, 0, 0) => ver8
-  SP(K4, k2) => (1/2)*(-ver1 + mz^2)
-  Den(-K3 + k1, 0, 0) => ver8
+  SP(K3, k1) => (-1/2)*(ver1 - mh^2)
+  SP(K3, K4) => (1/2)*shat + (-1/2)*mh^2 + (-1/2)*mz^2
+  Den(-K4 + k2, 0, 0) => ver5
+  Den(K3 - k1, 0, 0) => ver5
+  SP(K4, k2) => (-1/2)*ver1 + (1/2)*mz^2
+  Den(-K3 + k1, 0, 0) => ver5
   SP(k1, k1) => 0
-  Den(-k1 - k2, 0, 0) => ver9
-  Den(k1 + k2, 0, 0) => ver9
+  Den(-k1 - k2, 0, 0) => ver6
+  Den(k1 + k2, 0, 0) => ver6
 Color Factors: 
   amp_color #1: 
     ca; 
 Lorentz Factors: 
   amp_lorentz #1: 
-    2*mt^2*ver9*ver7*gcsub2*gcsub3*VecEpC(4, epMU4, K4, r4, mz)*gcsub51*gcsub81*FermionChain(VB(2, k2, r2, 0), GA(epMU4), U(1, k1, r1, 0)) + 10*mt^2*ver9*ver7*gcsub2*gcsub3*VecEpC(4, epMU4, K4, r4, mz)*gcsub58*gcsub81*FermionChain(VB(2, k2, r2, 0), GA(epMU4), U(1, k1, r1, 0)) - 2*im*ver9*ver7*gcsub2*gcsub3*VecEpC(4, epMU4, K4, r4, mz)*gcsub51*gcsub81*Levi(epMU4, dummyMU1, q1, k1)*FermionChain(VB(2, k2, r2, 0), GA(dummyMU1), U(1, k1, r1, 0)) - 2*im*ver9*ver7*gcsub2*gcsub3*VecEpC(4, epMU4, K4, r4, mz)*gcsub51*gcsub81*Levi(epMU4, dummyMU1, q1, k2)*FermionChain(VB(2, k2, r2, 0), GA(dummyMU1), U(1, k1, r1, 0)) + 6*im*ver9*ver7*gcsub2*gcsub3*VecEpC(4, epMU4, K4, r4, mz)*gcsub58*gcsub81*Levi(epMU4, dummyMU1, q1, k1)*FermionChain(VB(2, k2, r2, 0), GA(dummyMU1), U(1, k1, r1, 0)) + 6*im*ver9*ver7*gcsub2*gcsub3*VecEpC(4, epMU4, K4, r4, mz)*gcsub58*gcsub81*Levi(epMU4, dummyMU1, q1, k2)*FermionChain(VB(2, k2, r2, 0), GA(dummyMU1), U(1, k1, r1, 0)) - 2*ver9*ver7*gcsub2*gcsub3*VecEpC(4, epMU4, K4, r4, mz)*FV(k1, epMU4)*gcsub51*gcsub81*FermionChain(VB(2, k2, r2, 0), GA(dummyMU1), U(1, k1, r1, 0))*FV(q1, dummyMU1) - 10*ver9*ver7*gcsub2*gcsub3*VecEpC(4, epMU4, K4, r4, mz)*FV(k1, epMU4)*gcsub58*gcsub81*FermionChain(VB(2, k2, r2, 0), GA(dummyMU1), U(1, k1, r1, 0))*FV(q1, dummyMU1) - 2*ver9*ver7*gcsub2*gcsub3*VecEpC(4, epMU4, K4, r4, mz)*FV(k2, epMU4)*gcsub51*gcsub81*FermionChain(VB(2, k2, r2, 0), GA(dummyMU1), U(1, k1, r1, 0))*FV(q1, dummyMU1) - 10*ver9*ver7*gcsub2*gcsub3*VecEpC(4, epMU4, K4, r4, mz)*FV(k2, epMU4)*gcsub58*gcsub81*FermionChain(VB(2, k2, r2, 0), GA(dummyMU1), U(1, k1, r1, 0))*FV(q1, dummyMU1) + 4*ver9*ver7*gcsub2*gcsub3*VecEpC(4, epMU4, K4, r4, mz)*FV(q1, epMU4)*gcsub51*gcsub81*FermionChain(VB(2, k2, r2, 0), GA(dummyMU1), U(1, k1, r1, 0))*FV(q1, dummyMU1) + 20*ver9*ver7*gcsub2*gcsub3*VecEpC(4, epMU4, K4, r4, mz)*FV(q1, epMU4)*gcsub58*gcsub81*FermionChain(VB(2, k2, r2, 0), GA(dummyMU1), U(1, k1, r1, 0))*FV(q1, dummyMU1) + 2*ver9*ver7*gcsub2*gcsub3*LMT(dummyMU1, dummyMU2)*VecEpC(4, epMU4, K4, r4, mz)*gcsub51*gcsub81*FermionChain(VB(2, k2, r2, 0), GA(epMU4), U(1, k1, r1, 0))*FV(k1, dummyMU2)*FV(q1, dummyMU1) + 2*ver9*ver7*gcsub2*gcsub3*LMT(dummyMU1, dummyMU2)*VecEpC(4, epMU4, K4, r4, mz)*gcsub51*gcsub81*FermionChain(VB(2, k2, r2, 0), GA(epMU4), U(1, k1, r1, 0))*FV(k2, dummyMU2)*FV(q1, dummyMU1) - 2*ver9*ver7*gcsub2*gcsub3*LMT(dummyMU1, dummyMU2)*VecEpC(4, epMU4, K4, r4, mz)*gcsub51*gcsub81*FermionChain(VB(2, k2, r2, 0), GA(epMU4), U(1, k1, r1, 0))*FV(q1, dummyMU1)*FV(q1, dummyMU2) + 10*ver9*ver7*gcsub2*gcsub3*LMT(dummyMU1, dummyMU2)*VecEpC(4, epMU4, K4, r4, mz)*gcsub58*gcsub81*FermionChain(VB(2, k2, r2, 0), GA(epMU4), U(1, k1, r1, 0))*FV(k1, dummyMU2)*FV(q1, dummyMU1) + 10*ver9*ver7*gcsub2*gcsub3*LMT(dummyMU1, dummyMU2)*VecEpC(4, epMU4, K4, r4, mz)*gcsub58*gcsub81*FermionChain(VB(2, k2, r2, 0), GA(epMU4), U(1, k1, r1, 0))*FV(k2, dummyMU2)*FV(q1, dummyMU1) - 10*ver9*ver7*gcsub2*gcsub3*LMT(dummyMU1, dummyMU2)*VecEpC(4, epMU4, K4, r4, mz)*gcsub58*gcsub81*FermionChain(VB(2, k2, r2, 0), GA(epMU4), U(1, k1, r1, 0))*FV(q1, dummyMU1)*FV(q1, dummyMU2); 
+    2*mt^2*ver3*ver6*gcsub2*gcsub3*VecEpC(4, epMU4, K4, r4, mz)*gcsub51*gcsub81*FermionChain(VB(2, k2, r2, 0), GA(epMU4), U(1, k1, r1, 0)) + 10*mt^2*ver3*ver6*gcsub2*gcsub3*VecEpC(4, epMU4, K4, r4, mz)*gcsub58*gcsub81*FermionChain(VB(2, k2, r2, 0), GA(epMU4), U(1, k1, r1, 0)) - 2*im*ver3*ver6*gcsub2*gcsub3*VecEpC(4, epMU4, K4, r4, mz)*gcsub51*gcsub81*Levi(epMU4, dummyMU1, q1, k1)*FermionChain(VB(2, k2, r2, 0), GA(dummyMU1), U(1, k1, r1, 0)) - 2*im*ver3*ver6*gcsub2*gcsub3*VecEpC(4, epMU4, K4, r4, mz)*gcsub51*gcsub81*Levi(epMU4, dummyMU1, q1, k2)*FermionChain(VB(2, k2, r2, 0), GA(dummyMU1), U(1, k1, r1, 0)) + 6*im*ver3*ver6*gcsub2*gcsub3*VecEpC(4, epMU4, K4, r4, mz)*gcsub58*gcsub81*Levi(epMU4, dummyMU1, q1, k1)*FermionChain(VB(2, k2, r2, 0), GA(dummyMU1), U(1, k1, r1, 0)) + 6*im*ver3*ver6*gcsub2*gcsub3*VecEpC(4, epMU4, K4, r4, mz)*gcsub58*gcsub81*Levi(epMU4, dummyMU1, q1, k2)*FermionChain(VB(2, k2, r2, 0), GA(dummyMU1), U(1, k1, r1, 0)) - 2*ver3*ver6*gcsub2*gcsub3*VecEpC(4, epMU4, K4, r4, mz)*FV(k1, epMU4)*gcsub51*gcsub81*FermionChain(VB(2, k2, r2, 0), GA(dummyMU1), U(1, k1, r1, 0))*FV(q1, dummyMU1) - 10*ver3*ver6*gcsub2*gcsub3*VecEpC(4, epMU4, K4, r4, mz)*FV(k1, epMU4)*gcsub58*gcsub81*FermionChain(VB(2, k2, r2, 0), GA(dummyMU1), U(1, k1, r1, 0))*FV(q1, dummyMU1) - 2*ver3*ver6*gcsub2*gcsub3*VecEpC(4, epMU4, K4, r4, mz)*FV(k2, epMU4)*gcsub51*gcsub81*FermionChain(VB(2, k2, r2, 0), GA(dummyMU1), U(1, k1, r1, 0))*FV(q1, dummyMU1) - 10*ver3*ver6*gcsub2*gcsub3*VecEpC(4, epMU4, K4, r4, mz)*FV(k2, epMU4)*gcsub58*gcsub81*FermionChain(VB(2, k2, r2, 0), GA(dummyMU1), U(1, k1, r1, 0))*FV(q1, dummyMU1) + 4*ver3*ver6*gcsub2*gcsub3*VecEpC(4, epMU4, K4, r4, mz)*FV(q1, epMU4)*gcsub51*gcsub81*FermionChain(VB(2, k2, r2, 0), GA(dummyMU1), U(1, k1, r1, 0))*FV(q1, dummyMU1) + 20*ver3*ver6*gcsub2*gcsub3*VecEpC(4, epMU4, K4, r4, mz)*FV(q1, epMU4)*gcsub58*gcsub81*FermionChain(VB(2, k2, r2, 0), GA(dummyMU1), U(1, k1, r1, 0))*FV(q1, dummyMU1) + 2*ver3*ver6*gcsub2*gcsub3*LMT(dummyMU1, dummyMU2)*VecEpC(4, epMU4, K4, r4, mz)*gcsub51*gcsub81*FermionChain(VB(2, k2, r2, 0), GA(epMU4), U(1, k1, r1, 0))*FV(k1, dummyMU2)*FV(q1, dummyMU1) + 2*ver3*ver6*gcsub2*gcsub3*LMT(dummyMU1, dummyMU2)*VecEpC(4, epMU4, K4, r4, mz)*gcsub51*gcsub81*FermionChain(VB(2, k2, r2, 0), GA(epMU4), U(1, k1, r1, 0))*FV(k2, dummyMU2)*FV(q1, dummyMU1) - 2*ver3*ver6*gcsub2*gcsub3*LMT(dummyMU1, dummyMU2)*VecEpC(4, epMU4, K4, r4, mz)*gcsub51*gcsub81*FermionChain(VB(2, k2, r2, 0), GA(epMU4), U(1, k1, r1, 0))*FV(q1, dummyMU1)*FV(q1, dummyMU2) + 10*ver3*ver6*gcsub2*gcsub3*LMT(dummyMU1, dummyMU2)*VecEpC(4, epMU4, K4, r4, mz)*gcsub58*gcsub81*FermionChain(VB(2, k2, r2, 0), GA(epMU4), U(1, k1, r1, 0))*FV(k1, dummyMU2)*FV(q1, dummyMU1) + 10*ver3*ver6*gcsub2*gcsub3*LMT(dummyMU1, dummyMU2)*VecEpC(4, epMU4, K4, r4, mz)*gcsub58*gcsub81*FermionChain(VB(2, k2, r2, 0), GA(epMU4), U(1, k1, r1, 0))*FV(k2, dummyMU2)*FV(q1, dummyMU1) - 10*ver3*ver6*gcsub2*gcsub3*LMT(dummyMU1, dummyMU2)*VecEpC(4, epMU4, K4, r4, mz)*gcsub58*gcsub81*FermionChain(VB(2, k2, r2, 0), GA(epMU4), U(1, k1, r1, 0))*FV(q1, dummyMU1)*FV(q1, dummyMU2); 
 Model Parameters: 
   as => 0.118
   aws => 0.808

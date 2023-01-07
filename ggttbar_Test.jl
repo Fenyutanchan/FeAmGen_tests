@@ -69,7 +69,6 @@ for nloop in [0,1]
 
 end # for nloop
 
-#@testset "gg->ttbar" begin
 for nloop in [0,1]
 
   n_diagram = @pipe readdir( "g_g_TO_t_tbar_$(nloop)Loop_amplitudes" ) |> filter( name->name[end-4:end]==".jld2", _ ) |> length
@@ -95,7 +94,6 @@ for nloop in [0,1]
   end # testset for diagram_index
 
 end # for nloop
-#end # testset
 
 
 @info "ggttbar_Test ends @ $(now())"
