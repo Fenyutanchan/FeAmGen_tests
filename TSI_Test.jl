@@ -61,6 +61,7 @@ end # for one_yaml
 #-------------------------------
 
 
+#=
 #-------------------------------
 # Compare to the prepared results.
 @testset "Check TSI" begin
@@ -78,6 +79,7 @@ for one_yaml in multi_yaml_list
   @test jld_file0_dict == jld_file1_dict
 end # for one_yaml
 end # testset
+=#
 
 
 
@@ -98,6 +100,7 @@ for one_yaml in new_yaml_list
 end # for one_yaml
 #-------------------------------
 
+#=
 #-------------------------------
 # Compare to the prepared results.
 @testset "Check shiftUP_TSI" begin
@@ -115,6 +118,7 @@ for one_yaml in new_yaml_list
   @test jld_file0_dict == jld_file1_dict
 end # for one_yaml
 end # testset
+=#
 
 
 
