@@ -80,7 +80,16 @@ for nloop in [0,1,2]
     content_dict = load( "dbar_u_TO_Wplus_$(nloop)Loop_amplitudes/amplitude_diagram$(diagram_index).jld2" )
     content_dict_bench = load( "dbar_u_TO_Wplus_$(nloop)Loop_amplitudes_benchmark/amplitude_diagram$(diagram_index).jld2" )
 
-    @test content_dict == content_dict_bench 
+    @test length(content_dict) == length(content_dict_bench)
+    for key in keys(content_dict)
+      value = content_dict[key] 
+      value_bench = content_dict_bench[key] 
+      if key == "amp_lorentz_list" 
+        @test all( iszero∘expand, Basic.(value) .- Basic.(value_bench) )
+      else
+        @test value == value_bench
+      end # if
+    end # for key
 
     visual_bench_file = open( "dbar_u_TO_Wplus_$(nloop)Loop_visuals_benchmark/visual_diagram$(diagram_index).tex" ) 
     visual_list_bench = readlines( visual_bench_file )

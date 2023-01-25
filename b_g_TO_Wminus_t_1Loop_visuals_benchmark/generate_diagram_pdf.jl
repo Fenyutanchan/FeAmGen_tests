@@ -1,4 +1,13 @@
-diagram_index_list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
-for diagram_index in diagram_index_list
-  run( `lualatex visual_diagram$(diagram_index)` )
-end
+root, dirs, files = (first∘collect∘walkdir)(".")
+
+tex_list = filter( s->s[end-2:end] == "tex", files )
+tex_head_list = map( s->s[1:end-4], tex_list )
+
+pdf_list = filter( s->s[end-2:end] == "pdf", files )
+pdf_head_list = map( s->s[1:end-4], pdf_list )
+
+mission_head_list = setdiff( tex_head_list, pdf_head_list )
+
+for one_mission in mission_head_list
+  run( `lualatex $(one_mission)` )
+end # for one_mission

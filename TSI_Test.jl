@@ -61,7 +61,6 @@ end # for one_yaml
 #-------------------------------
 
 
-#=
 #-------------------------------
 # Compare to the prepared results.
 @testset "Check TSI" begin
@@ -79,7 +78,6 @@ for one_yaml in multi_yaml_list
   @test jld_file0_dict == jld_file1_dict
 end # for one_yaml
 end # testset
-=#
 
 
 
@@ -90,7 +88,7 @@ for one_indices in indices_list
   indices_str = join( map( string, one_indices ), "," )
   push!( scalar_yaml_list, "TSI_integrals/TSI_$(indices_str).yaml" )
 end # for one_indices
-new_yaml_list = generate_shiftUP_yaml( scalar_yaml_list, "shiftUP_TSI_integrals" )
+new_yaml_list = generate_shiftUP_yaml( scalar_yaml_list, "TSI_shiftUP_integrals" )
 #-------------------------------
 
 #-------------------------------
@@ -100,25 +98,23 @@ for one_yaml in new_yaml_list
 end # for one_yaml
 #-------------------------------
 
-#=
 #-------------------------------
 # Compare to the prepared results.
-@testset "Check shiftUP_TSI" begin
+@testset "Check TSI_shiftUP" begin
 for one_yaml in new_yaml_list
   file_name = last( splitpath( one_yaml )  )
-  yaml_file0_dict = YAML.load_file( joinpath( "shiftUP_TSI_integrals_benchmark", file_name ) )
-  yaml_file1_dict = YAML.load_file( joinpath( "shiftUP_TSI_integrals", file_name ) )
+  yaml_file0_dict = YAML.load_file( joinpath( "TSI_shiftUP_integrals_benchmark", file_name ) )
+  yaml_file1_dict = YAML.load_file( joinpath( "TSI_shiftUP_integrals", file_name ) )
   delete!( yaml_file0_dict, "comment" )
   delete!( yaml_file1_dict, "comment" )
   @test yaml_file0_dict == yaml_file1_dict
 
   jld_name = "integral$(file_name[1:end-5]).jld2"
-  jld_file0_dict = load( joinpath( "shiftUP_TSI_integrals_benchmark", jld_name ) )
-  jld_file1_dict = load( joinpath( "shiftUP_TSI_integrals", jld_name ) )
+  jld_file0_dict = load( joinpath( "TSI_shiftUP_integrals_benchmark", jld_name ) )
+  jld_file1_dict = load( joinpath( "TSI_shiftUP_integrals", jld_name ) )
   @test jld_file0_dict == jld_file1_dict
 end # for one_yaml
 end # testset
-=#
 
 
 

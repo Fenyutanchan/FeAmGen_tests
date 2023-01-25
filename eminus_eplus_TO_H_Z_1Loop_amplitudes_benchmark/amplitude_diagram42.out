@@ -2,7 +2,7 @@ n_loop: 1
 couplingfactor: 1
 ext_mom_list: Basic[k1, k2, K3, K4]
 scale2_list: Basic[shat, mh^2, ver1, mz^2, mt^2]
-Diagram #42: 
+Graph #42: 
   Denominators: 
     Den(-k1 - k2 + q1, mt, 0)
     Den(q1, mt, 0)

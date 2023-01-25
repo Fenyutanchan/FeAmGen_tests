@@ -2,7 +2,7 @@ n_loop: 1
 couplingfactor: 1
 ext_mom_list: Basic[k1, k2, K3, K4]
 scale2_list: Basic[shat, mh^2, ver1, mz^2, mw^2]
-Diagram #12: 
+Graph #12: 
   Denominators: 
     Den(-K4 - q1, mw, 0)
     Den(-q1, mw, 0)
@@ -36,7 +36,7 @@ Color Factors:
     1; 
 Lorentz Factors: 
   amp_lorentz #1: 
-    -im*ver6*gcsub3*VecEpC(4, epMU4, K4, r4, mz)*gcsub54*gcsub66*FermionChain(VB(2, k2, r2, 0), GA(epMU4), U(1, k1, r1, 0)); 
+    im*(-ver6)*gcsub3*VecEpC(4, epMU4, K4, r4, mz)*gcsub54*gcsub66*FermionChain(VB(2, k2, r2, 0), GA(epMU4), U(1, k1, r1, 0)); 
 Model Parameters: 
   as => 0.118
   aws => 0.808

@@ -2,7 +2,7 @@ n_loop: 0
 couplingfactor: 1
 ext_mom_list: Basic[k1, k2, K3]
 scale2_list: Basic[mw^2]
-Diagram #1: 
+Graph #1: 
   Denominators: 
 Kinematics Relations: 
   SP(K3, k2) => (1/2)*mw^2
@@ -16,7 +16,7 @@ Color Factors:
     DeltaFun(clb1, clb2); 
 Lorentz Factors: 
   amp_lorentz #1: 
-    VecEpC(3, epMU3, K3, r3, mw)*FermionChain(VB(1, k1, r1, 0), PR, GA(epMU3), U(2, k2, r2, 0))*gcsub100; 
+    (1)*VecEpC(3, epMU3, K3, r3, mw)*FermionChain(VB(1, k1, r1, 0), PR, GA(epMU3), U(2, k2, r2, 0))*gcsub100; 
 Model Parameters: 
   as => 0.118
   aws => 0.808

@@ -2,7 +2,7 @@ n_loop: 0
 couplingfactor: 1
 ext_mom_list: Basic[k1, k2, K3, K4]
 scale2_list: Basic[shat, mh^2, ver1, mz^2]
-Diagram #1: 
+Graph #1: 
   Denominators: 
 Kinematics Relations: 
   Den(-k1 - k2, mz, wz) => ver2
@@ -22,7 +22,7 @@ Color Factors:
     1; 
 Lorentz Factors: 
   amp_lorentz #1: 
-    -2*im*ver2*VecEpC(4, epMU4, K4, r4, mz)*FermionChain(VB(2, k2, r2, 0), PL, GA(epMU4), U(1, k1, r1, 0))*gcsub59*gcsub81 - im*ver2*VecEpC(4, epMU4, K4, r4, mz)*FermionChain(VB(2, k2, r2, 0), PR, GA(epMU4), U(1, k1, r1, 0))*gcsub50*gcsub81 - im*ver2*VecEpC(4, epMU4, K4, r4, mz)*FermionChain(VB(2, k2, r2, 0), PR, GA(epMU4), U(1, k1, r1, 0))*gcsub59*gcsub81; 
+    im*(-2*ver2)*VecEpC(4, epMU4, K4, r4, mz)*FermionChain(VB(2, k2, r2, 0), PL, GA(epMU4), U(1, k1, r1, 0))*gcsub59*gcsub81 + im*(-ver2)*VecEpC(4, epMU4, K4, r4, mz)*FermionChain(VB(2, k2, r2, 0), PR, GA(epMU4), U(1, k1, r1, 0))*gcsub50*gcsub81 + im*(-ver2)*VecEpC(4, epMU4, K4, r4, mz)*FermionChain(VB(2, k2, r2, 0), PR, GA(epMU4), U(1, k1, r1, 0))*gcsub59*gcsub81; 
 Model Parameters: 
   as => 0.118
   aws => 0.808

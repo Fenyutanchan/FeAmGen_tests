@@ -1,3 +1,7 @@
+Loop Denominators: Basic[]
+
+Loop Denominator Exponents: Int64[] 
+
 (* coupling factor: *) 
 1
 (* color factor \#1: *)
@@ -5,4 +9,4 @@ SUNT(clb2, cla4, clb1)
 
 (* color factor coefficient \#1: *)
 
-im*ver3*VecEpC(3, epMU3, K3, r3, mw)*gcsub49*gcsub11*FermionChain(UB(4, K4, r4, mt), GA(epMU3), PL, GA(dummyMU1), GA(epMU2), U(1, k1, r1, 0))*FV(k1 + k2, dummyMU1)*VecEp(2, epMU2, k2, r2, 0)
+im*ver3*FermionChain(UB(4, K4, r4, mt), GA(epMU3), PL, GA(k1 + k2), GA(epMU2), U(1, k1, r1, 0))*VecEpC(3, epMU3, K3, r3, mw)*gcsub49*gcsub11*VecEp(2, epMU2, k2, r2, 0)

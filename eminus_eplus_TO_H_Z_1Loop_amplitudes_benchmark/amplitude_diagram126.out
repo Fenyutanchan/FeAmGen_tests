@@ -2,7 +2,7 @@ n_loop: 1
 couplingfactor: 1
 ext_mom_list: Basic[k1, k2, K3, K4]
 scale2_list: Basic[shat, mh^2, ver1, mz^2, mw^2]
-Diagram #126: 
+Graph #126: 
   Denominators: 
     Den(-k2 - q1, 0, 0)
     Den(k1 - q1, 0, 0)
@@ -37,7 +37,7 @@ Color Factors:
     1; 
 Lorentz Factors: 
   amp_lorentz #1: 
-    -ver3*FermionChain(VB(2, k2, r2, 0), PR, GA(dummyMU3), GA(dummyMU1), GA(epMU4), GA(dummyMU2), GA(dummyMU3), U(1, k1, r1, 0))*VecEpC(4, epMU4, K4, r4, mz)*gcsub40^2*gcsub81*gcsub62*FV(k1, dummyMU2)*FV(q1, dummyMU1) + ver3*FermionChain(VB(2, k2, r2, 0), PR, GA(dummyMU3), GA(dummyMU1), GA(epMU4), GA(dummyMU2), GA(dummyMU3), U(1, k1, r1, 0))*VecEpC(4, epMU4, K4, r4, mz)*gcsub40^2*gcsub81*gcsub62*FV(q1, dummyMU1)*FV(q1, dummyMU2) - ver3*VecEpC(4, epMU4, K4, r4, mz)*gcsub40^2*gcsub81*gcsub62*FV(k1, dummyMU1)*FV(k2, dummyMU2)*FermionChain(VB(2, k2, r2, 0), PR, GA(dummyMU3), GA(dummyMU2), GA(epMU4), GA(dummyMU1), GA(dummyMU3), U(1, k1, r1, 0)) + ver3*VecEpC(4, epMU4, K4, r4, mz)*gcsub40^2*gcsub81*gcsub62*FV(k2, dummyMU2)*FV(q1, dummyMU1)*FermionChain(VB(2, k2, r2, 0), PR, GA(dummyMU3), GA(dummyMU2), GA(epMU4), GA(dummyMU1), GA(dummyMU3), U(1, k1, r1, 0)); 
+    (-ver3)*FermionChain(VB(2, k2, r2, 0), PR, GA(dummyMU3), GA(dummyMU1), GA(epMU4), GA(dummyMU2), GA(dummyMU3), U(1, k1, r1, 0))*VecEpC(4, epMU4, K4, r4, mz)*gcsub40^2*gcsub81*gcsub62*FV(k1, dummyMU2)*FV(q1, dummyMU1) + (-ver3)*VecEpC(4, epMU4, K4, r4, mz)*gcsub40^2*gcsub81*gcsub62*FV(k1, dummyMU1)*FV(k2, dummyMU2)*FermionChain(VB(2, k2, r2, 0), PR, GA(dummyMU3), GA(dummyMU2), GA(epMU4), GA(dummyMU1), GA(dummyMU3), U(1, k1, r1, 0)) + FermionChain(VB(2, k2, r2, 0), PR, GA(dummyMU3), GA(dummyMU1), GA(epMU4), GA(dummyMU2), GA(dummyMU3), U(1, k1, r1, 0))*VecEpC(4, epMU4, K4, r4, mz)*(ver3)*gcsub40^2*gcsub81*gcsub62*FV(q1, dummyMU1)*FV(q1, dummyMU2) + VecEpC(4, epMU4, K4, r4, mz)*(ver3)*gcsub40^2*gcsub81*gcsub62*FV(k2, dummyMU2)*FV(q1, dummyMU1)*FermionChain(VB(2, k2, r2, 0), PR, GA(dummyMU3), GA(dummyMU2), GA(epMU4), GA(dummyMU1), GA(dummyMU3), U(1, k1, r1, 0)); 
 Model Parameters: 
   as => 0.118
   aws => 0.808

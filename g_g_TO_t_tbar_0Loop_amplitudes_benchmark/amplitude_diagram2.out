@@ -2,7 +2,7 @@ n_loop: 0
 couplingfactor: 1
 ext_mom_list: Basic[k1, k2, K3, K4]
 scale2_list: Basic[shat, mt^2, ver1]
-Diagram #2: 
+Graph #2: 
   Denominators: 
 Kinematics Relations: 
   Den(-K4 + k1, mt, wt) => ver2
@@ -28,7 +28,7 @@ Color Factors:
     SUNT(clb1, clb2, cla3, cla4); 
 Lorentz Factors: 
   amp_lorentz #1: 
-    im*ver3*FermionChain(UB(3, K3, r3, mt), GA(epMU1), GA(dummyMU1), GA(epMU2), V(4, K4, r4, mt))*gcsub11^2*FV(K3, dummyMU1)*VecEp(2, epMU2, k2, r2, 0)*VecEp(1, epMU1, k1, r1, 0) - im*ver3*FermionChain(UB(3, K3, r3, mt), GA(epMU1), GA(dummyMU1), GA(epMU2), V(4, K4, r4, mt))*gcsub11^2*FV(k1, dummyMU1)*VecEp(2, epMU2, k2, r2, 0)*VecEp(1, epMU1, k1, r1, 0) + mt*im*ver3*FermionChain(UB(3, K3, r3, mt), GA(epMU1), GA(epMU2), V(4, K4, r4, mt))*gcsub11^2*VecEp(2, epMU2, k2, r2, 0)*VecEp(1, epMU1, k1, r1, 0); 
+    im*(-ver3)*FermionChain(UB(3, K3, r3, mt), GA(epMU1), GA(dummyMU1), GA(epMU2), V(4, K4, r4, mt))*gcsub11^2*FV(k1, dummyMU1)*VecEp(2, epMU2, k2, r2, 0)*VecEp(1, epMU1, k1, r1, 0) + im*FermionChain(UB(3, K3, r3, mt), GA(epMU1), GA(dummyMU1), GA(epMU2), V(4, K4, r4, mt))*(ver3)*gcsub11^2*FV(K3, dummyMU1)*VecEp(2, epMU2, k2, r2, 0)*VecEp(1, epMU1, k1, r1, 0) + mt*im*FermionChain(UB(3, K3, r3, mt), GA(epMU1), GA(epMU2), V(4, K4, r4, mt))*(ver3)*gcsub11^2*VecEp(2, epMU2, k2, r2, 0)*VecEp(1, epMU1, k1, r1, 0); 
 Model Parameters: 
   as => 0.118
   aws => 0.808
