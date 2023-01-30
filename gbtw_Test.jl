@@ -1,6 +1,7 @@
 using SymEngine, FeAmGen, Test, YAML, JLD2, Pipe, Dates
 
-@info "gbtw_Test starts @ $(now())"
+start = now()
+@info "gbtw_Test starts @ $(start)"
 
 #----------------------------------------------------------------------------
 # single-top gb->tW 0-loop, 1-loop, 2-loop tests
@@ -104,6 +105,6 @@ for nloop in [0,1,2]
 
 end # for nloop
 
-@info "gbtw_Test ends @ $(now())"
+@info "gbtw_Test ends @ $(now()) started from $(start)"
 
 

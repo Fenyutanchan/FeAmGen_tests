@@ -36,7 +36,7 @@ Color Factors:
     1; 
 Lorentz Factors: 
   amp_lorentz #1: 
-    (-4*ver3^2)*VecEpC(4, epMU4, K4, r4, mz)*FermionChain(VB(2, k2, r2, 0), PL, GA(dummyMU1), U(1, k1, r1, 0))*FV(K3, epMU4)*gcsub59*gcsub52*gcsub73*gcsub60*FV(q1, dummyMU1) + (-2*ver3^2)*VecEpC(4, epMU4, K4, r4, mz)*FV(K3, epMU4)*gcsub50*gcsub52*gcsub73*gcsub60*FermionChain(VB(2, k2, r2, 0), PR, GA(dummyMU1), U(1, k1, r1, 0))*FV(q1, dummyMU1) + (-2*ver3^2)*VecEpC(4, epMU4, K4, r4, mz)*FV(K3, epMU4)*gcsub59*gcsub52*gcsub73*gcsub60*FermionChain(VB(2, k2, r2, 0), PR, GA(dummyMU1), U(1, k1, r1, 0))*FV(q1, dummyMU1); 
+    (-4*ver3^2)*FV(q1,dum1)*FermionChain(VB(2,k2,r2,0),PL,GA(dum1),U(1,k1,r1,0))*VecEpC(4,epMU4,K4,r4,mz)*FV(K3,epMU4)*gcsub59*gcsub52*gcsub73*gcsub60+(-2*ver3^2)*FV(q1,dum1)*VecEpC(4,epMU4,K4,r4,mz)*FV(K3,epMU4)*gcsub50*gcsub52*gcsub73*gcsub60*FermionChain(VB(2,k2,r2,0),PR,GA(dum1),U(1,k1,r1,0))+(-2*ver3^2)*FV(q1,dum1)*VecEpC(4,epMU4,K4,r4,mz)*FV(K3,epMU4)*gcsub59*gcsub52*gcsub73*gcsub60*FermionChain(VB(2,k2,r2,0),PR,GA(dum1),U(1,k1,r1,0)); 
 Model Parameters: 
   as => 0.118
   aws => 0.808

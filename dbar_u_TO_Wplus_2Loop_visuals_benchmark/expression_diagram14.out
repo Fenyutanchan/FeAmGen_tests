@@ -9,4 +9,4 @@ Loop Denominator Exponents: [1, 1, 1, 1, 1, 1]
 
 (* color factor coefficient \#1: *)
 
--FermionChain(VB(1, k1, r1, 0), GA(dummyMU1), GA(q1), GA(epMU3), PL, GA(K3 + q1), GA(dummyMU2), U(2, k2, r2, 0))*VecEpC(3, epMU3, K3, r3, mw)*Trace(GA(q2), GA(dummyMU1), GA(-k1 - q1 + q2), GA(dummyMU2))*gcsub11^4*gcsub100
+-FermionChain(VB(1, k1, r1, 0), GA(dum1), GA(q1), GA(epMU3), PL, GA(K3 + q1), GA(dum2), U(2, k2, r2, 0))*VecEpC(3, epMU3, K3, r3, mw)*gcsub11^4*Trace(GA(q2), GA(dum1), GA(-k1 - q1 + q2), GA(dum2))*gcsub100

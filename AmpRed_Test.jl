@@ -77,9 +77,13 @@ for index in 1:n_num
   end 
 
   generate_integral( file_name )
-
   rm( file_name )
+end # for index
 
+
+
+
+for index in 1:n_num
   @testset "scalar_integral SI$(index)" begin
     content_dict = load( "$(target_dir)/integralDia199_$(rank_str)_SI$(index).jld2" )
     content_dict_bench = load( "$(target_dir)_benchmark/integralDia199_$(rank_str)_SI$(index).jld2" )
@@ -95,7 +99,6 @@ for index in 1:n_num
     @test content_dict == content_dict_bench 
 
   end # @testset
-
 end # for index
 
 @info "AmpRed_Test ends @ $(now())"

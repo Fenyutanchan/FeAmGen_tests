@@ -1,6 +1,7 @@
 using SymEngine, FeAmGen, Test, YAML, JLD2, Dates, Pipe
 
-@info "top_self_Test starts @ $(now())"
+start = now()
+@info "top_self_Test starts @ $(start)"
 
 #----------------------------------------------------------------------------
 # top self energy 1-loop, 2-loop including tbW vertices tests
@@ -68,37 +69,6 @@ for nloop in [4]
 
 end # for nloop
 
-error("DEBUG")
-
-#@testset "gg->ttbar" begin
-for nloop in [0,1]
-
-  n_diagram = @pipe readdir( "g_g_TO_t_tbar_$(nloop)Loop_amplitudes" ) |> filter( name->name[end-4:end]==".jld2", _ ) |> length
-
-  @testset "gg->ttbar $(nloop)-loop diagrams" begin
-  for diagram_index in 1:n_diagram
-
-    content_dict = load( "g_g_TO_t_tbar_$(nloop)Loop_amplitudes/amplitude_diagram$(diagram_index).jld2" )
-    content_dict_bench = load( "g_g_TO_t_tbar_$(nloop)Loop_amplitudes_benchmark/amplitude_diagram$(diagram_index).jld2" )
-
-    @test content_dict == content_dict_bench 
-
-    visual_bench_file = open( "g_g_TO_t_tbar_$(nloop)Loop_visuals_benchmark/visual_diagram$(diagram_index).tex" ) 
-    visual_list_bench = readlines( visual_bench_file )
-    close( visual_bench_file )
-    
-    visual_file = open( "g_g_TO_t_tbar_$(nloop)Loop_visuals/visual_diagram$(diagram_index).tex" )
-    visual_list = readlines( visual_file )
-    close( visual_file )
-
-    @test visual_list == visual_list_bench 
-  end # for diagram_index
-  end # testset for diagram_index
-
-end # for nloop
-#end # testset
-
-
-@info "ggttbar_Test ends @ $(now())"
+@info "top_self_Test ends @ $(now()) started from $(start)"
 
 
